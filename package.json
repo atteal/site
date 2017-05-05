@@ -4,7 +4,7 @@
   "description": "",
   "main": "build.js",
   "scripts": {
-    "build": "node -r dotenv/config build.js dotenv_config_path=production.config.js && npm run build-css",
+    "build": "node build.js && npm run build-css",
     "build-css": "node-sass -o public/assets/styles app/assets/styles",
     "build:dev": "DEBUG=* node -r dotenv/config build.js",
     "dev": "npm run build:dev && npm run build-css"

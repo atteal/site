@@ -5,8 +5,6 @@ const layouts = require('metalsmith-layouts');
 const markdown = require('metalsmith-markdown');
 const permalinks  = require('metalsmith-permalinks');
 
-console.log(JSON.stringify(process.env, null, 2));
-
 Metalsmith(__dirname)
     .source('./app')
     .destination('./public')
