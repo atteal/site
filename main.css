@@ -30,7 +30,7 @@ html {
 
 .container--viewport {
   height: 100vh;
-  width: 100wv;
+  width: 100vw;
 }
 
 .container--viewport__content {
@@ -38,7 +38,13 @@ html {
   position: relative;
   top: 37vh;
   margin: 0 auto;
-  width: 25vw;
+  width: 24vw;
+}
+
+@media (max-width: 1200px) { 
+  .container--viewport__content {
+    width: 80vw;
+  }
 }
 
 .logo {
@@ -64,9 +70,10 @@ html {
 .button--cta {
   color: #FFF;
   font-size: 0.9rem;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   text-decoration: none;
-  padding: 0.5em 0.9em;
+  padding: 0.6em 1.3em;
   transition: all .2s ease-in-out;
 }
 
