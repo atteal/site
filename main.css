@@ -54,13 +54,13 @@ main {
   display: inline-block;
 }
 
-.button--outline {
-  border: 3px solid #FFF;
+.button--fill {
+  background: #FFF;
 }
 
 .button--cta {
   border-radius: 8px;
-  color: #FFF;
+  color: #290437;
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -70,8 +70,7 @@ main {
 }
 
 .button--cta:hover {
-  background: #FFF;
-  color: #290437;
+  background: rgba(255,255,255, .9);
 }
 
 .contact-cta {
